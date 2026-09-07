@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuvraj Singh | B.Tech CSE • Developer & Innovator</title>
+  <meta name="description" content="Official portfolio of Yuvraj Singh - B.Tech Computer Science & Engineering student at Lovely Professional University. Discover projects including Sound Wave Fire Extinguisher and Hospital Management System.">
+  <meta name="keywords" content="Yuvraj Singh, Portfolio, B.Tech CSE, Lovely Professional University, C++, Python, MySQL, Sound Wave Fire Extinguisher, Hospital Management System">
+  <meta name="author" content="Yuvraj Singh">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Yuvraj Singh | Software Developer Portfolio">
+  <meta property="og:description" content="Explore projects, skills, education, and technical certifications of Yuvraj Singh.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Inter & Outfit & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#faf5ff',
+              100: '#f3e8ff',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              700: '#6d28d9',
+            },
+            surface: {
+              light: '#ffffff',
+              dark: '#05070e',
+              card: 'rgba(15, 21, 37, 0.75)'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Futuristic Holographic CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-slate-900 dark:text-slate-100 min-h-screen relative selection:bg-purple-500 selection:text-white">
+
+  <!-- Fixed Fullscreen Aesthetic 3D Holographic Background -->
+  <div class="fixed-aesthetic-bg">
+    <img src="assets/aesthetic-holographic-bg.jpg" alt="Aesthetic Holographic Fluid Ribbon Background" class="aesthetic-bg-img">
+    <div class="aesthetic-bg-overlay"></div>
+    <div class="cosmic-orb-1"></div>
+    <div class="cosmic-orb-2"></div>
+    <div class="cosmic-orb-3"></div>
+  </div>
+
+  <!-- =========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================= -->
+  <header id="main-navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-panel border-b border-slate-200/60 dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl dynamic-theme-btn flex items-center justify-center text-white font-mono font-extrabold shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-transform">
+          YS
+        </div>
+        <div class="flex flex-col">
+          <span class="text-lg font-extrabold font-heading text-slate-900 dark:text-white tracking-tight leading-none group-hover:text-purple-400 transition-colors">
+            Yuvraj Singh
+          </span>
+          <span class="text-[11px] font-mono text-cyan-500 font-semibold mt-0.5">
+            &lt;Zero-G Developer /&gt;
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+        <a href="#hero" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-purple-500 dark:hover:text-purple-400 rounded-lg transition-colors">Home</a>
+        <a href="#about" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-purple-500 dark:hover:text-purple-400 rounded-lg transition-colors">About</a>
+        <a href="#academic" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-purple-500 dark:hover:text-purple-400 rounded-lg transition-colors">Academics</a>
+        <a href="#skills" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-purple-500 dark:hover:text-purple-400 rounded-lg transition-colors">Skills</a>
+        <a href="#projects" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-purple-500 dark:hover:text-purple-400 rounded-lg transition-colors">Projects</a>
+        <a href="#certificates" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-purple-500 dark:hover:text-purple-400 rounded-lg transition-colors">Certificates</a>
+        <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-purple-500 dark:hover:text-purple-400 rounded-lg transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="hidden md:flex items-center gap-2.5">
+        
+        <!-- Theme Color Switcher Palette Dropdown -->
+        <div class="relative group/palette">
+          <button type="button" class="p-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 transition-colors flex items-center gap-1.5 border border-white/10" title="Choose Theme Color Accent">
+            <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4 4.5 4.5 0 011.66-3.48L11 6l5 5-7.52 7.52A4 4 0 017 21z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l7 7m-3 3l-3-3"/></svg>
+            <span class="w-3 h-3 rounded-full inline-block current-color-indicator shadow-sm"></span>
+          </button>
+          
+          <!-- Dropdown Palette Menu -->
+          <div class="absolute right-0 mt-2 w-52 p-3 glass-card rounded-2xl border border-white/15 shadow-2xl backdrop-blur-2xl opacity-0 pointer-events-none group-hover/palette:opacity-100 group-hover/palette:pointer-events-auto transition-all duration-200 z-50">
+            <div class="text-[10px] font-mono uppercase tracking-wider text-slate-400 font-bold mb-2 pb-1.5 border-b border-white/10 flex items-center justify-between">
+              <span>Theme Accents</span>
+              <span class="text-xs">🎨</span>
+            </div>
+            <div class="space-y-1">
+              <button type="button" data-theme-color="cosmic" class="color-swatch-btn w-full px-2.5 py-1.5 rounded-xl flex items-center justify-between hover:bg-white/10 text-xs font-medium transition-colors text-left group">
+                <span class="flex items-center gap-2">
+                  <span class="w-3.5 h-3.5 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 inline-block shadow-sm"></span>
+                  <span>Cosmic Violet</span>
+                </span>
+                <span class="active-check text-purple-400 opacity-0 group-[.active]:opacity-100 font-bold text-xs">✓</span>
+              </button>
+              <button type="button" data-theme-color="emerald" class="color-swatch-btn w-full px-2.5 py-1.5 rounded-xl flex items-center justify-between hover:bg-white/10 text-xs font-medium transition-colors text-left group">
+                <span class="flex items-center gap-2">
+                  <span class="w-3.5 h-3.5 rounded-full bg-gradient-to-tr from-emerald-400 to-cyan-400 inline-block shadow-sm"></span>
+                  <span>Matrix Emerald</span>
+                </span>
+                <span class="active-check text-emerald-400 opacity-0 group-[.active]:opacity-100 font-bold text-xs">✓</span>
+              </button>
+              <button type="button" data-theme-color="sunset" class="color-swatch-btn w-full px-2.5 py-1.5 rounded-xl flex items-center justify-between hover:bg-white/10 text-xs font-medium transition-colors text-left group">
+                <span class="flex items-center gap-2">
+                  <span class="w-3.5 h-3.5 rounded-full bg-gradient-to-tr from-amber-400 to-rose-500 inline-block shadow-sm"></span>
+                  <span>Sunset Gold</span>
+                </span>
+                <span class="active-check text-amber-400 opacity-0 group-[.active]:opacity-100 font-bold text-xs">✓</span>
+              </button>
+              <button type="button" data-theme-color="blue" class="color-swatch-btn w-full px-2.5 py-1.5 rounded-xl flex items-center justify-between hover:bg-white/10 text-xs font-medium transition-colors text-left group">
+                <span class="flex items-center gap-2">
+                  <span class="w-3.5 h-3.5 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-400 inline-block shadow-sm"></span>
+                  <span>Electric Blue</span>
+                </span>
+                <span class="active-check text-blue-400 opacity-0 group-[.active]:opacity-100 font-bold text-xs">✓</span>
+              </button>
+              <button type="button" data-theme-color="magenta" class="color-swatch-btn w-full px-2.5 py-1.5 rounded-xl flex items-center justify-between hover:bg-white/10 text-xs font-medium transition-colors text-left group">
+                <span class="flex items-center gap-2">
+                  <span class="w-3.5 h-3.5 rounded-full bg-gradient-to-tr from-pink-500 to-rose-600 inline-block shadow-sm"></span>
+                  <span>Neon Magenta</span>
+                </span>
+                <span class="active-check text-pink-400 opacity-0 group-[.active]:opacity-100 font-bold text-xs">✓</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dark/Light Theme Switcher -->
+        <button type="button" class="theme-toggle-btn p-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 transition-colors border border-white/10" title="Toggle Dark/Light Mode" aria-label="Toggle theme">
+          <svg class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <svg class="w-5 h-5 block dark:hidden text-purple-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+
+        <!-- Dynamic Theme Contact CTA -->
+        <a href="#contact" class="dynamic-theme-btn px-5 py-2.5 text-sm font-semibold text-white rounded-xl shadow-lg hover:-translate-y-0.5 transition-all flex items-center gap-2">
+          <span>Let's Connect</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button & Theme Toggle -->
+      <div class="flex items-center gap-2 md:hidden">
+        <button type="button" class="theme-toggle-btn p-2 rounded-xl text-slate-400 hover:bg-white/10 transition-colors" aria-label="Toggle theme">
+          <svg class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <svg class="w-5 h-5 block dark:hidden text-purple-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="mobile-menu-btn" type="button" class="p-2 rounded-xl text-slate-200 hover:bg-white/10 focus:outline-none" aria-label="Open navigation menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Menu -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/70 backdrop-blur-md z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  <div id="mobile-menu" class="fixed top-0 right-0 bottom-0 w-72 max-w-[85%] bg-slate-950/95 backdrop-blur-2xl border-l border-white/10 z-50 transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-white/10">
+        <span class="text-xl font-bold font-heading text-white">Navigation</span>
+        <button id="close-mobile-menu" type="button" class="p-2 text-slate-400 hover:text-white rounded-lg" aria-label="Close menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="mt-6 flex flex-col space-y-2.5">
+        <a href="#hero" class="mobile-nav-link text-slate-300 hover:text-purple-400 text-base font-medium py-2 px-3 rounded-lg transition-colors">Home</a>
+        <a href="#about" class="mobile-nav-link text-slate-300 hover:text-purple-400 text-base font-medium py-2 px-3 rounded-lg transition-colors">About Me</a>
+        <a href="#academic" class="mobile-nav-link text-slate-300 hover:text-purple-400 text-base font-medium py-2 px-3 rounded-lg transition-colors">Academics</a>
+        <a href="#skills" class="mobile-nav-link text-slate-300 hover:text-purple-400 text-base font-medium py-2 px-3 rounded-lg transition-colors">Skills</a>
+        <a href="#projects" class="mobile-nav-link text-slate-300 hover:text-purple-400 text-base font-medium py-2 px-3 rounded-lg transition-colors">Projects</a>
+        <a href="#certificates" class="mobile-nav-link text-slate-300 hover:text-purple-400 text-base font-medium py-2 px-3 rounded-lg transition-colors">Certificates</a>
+        <a href="#contact" class="mobile-nav-link text-slate-300 hover:text-purple-400 text-base font-medium py-2 px-3 rounded-lg transition-colors">Contact Me</a>
+        <button type="button" onclick="openCVModal()" class="open-cv-modal text-left text-purple-300 hover:text-white text-base font-medium py-2 px-3 rounded-lg transition-colors flex items-center gap-2 cursor-pointer">
+          <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>CV / Resume</span>
+        </button>
+      </nav>
+
+      <!-- Mobile Theme Colors -->
+      <div class="mt-6 pt-4 border-t border-white/10">
+        <span class="text-[11px] font-mono uppercase tracking-wider text-slate-400 font-bold block mb-3">Color Accent</span>
+        <div class="flex items-center gap-3">
+          <button type="button" data-theme-color="cosmic" class="w-8 h-8 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 border border-white/20 shadow-sm" title="Cosmic"></button>
+          <button type="button" data-theme-color="emerald" class="w-8 h-8 rounded-xl bg-gradient-to-tr from-emerald-400 to-cyan-400 border border-white/20 shadow-sm" title="Emerald"></button>
+          <button type="button" data-theme-color="sunset" class="w-8 h-8 rounded-xl bg-gradient-to-tr from-amber-400 to-rose-500 border border-white/20 shadow-sm" title="Sunset"></button>
+          <button type="button" data-theme-color="blue" class="w-8 h-8 rounded-xl bg-gradient-to-tr from-blue-500 to-cyan-400 border border-white/20 shadow-sm" title="Blue"></button>
+          <button type="button" data-theme-color="magenta" class="w-8 h-8 rounded-xl bg-gradient-to-tr from-pink-500 to-rose-600 border border-white/20 shadow-sm" title="Magenta"></button>
+        </div>
+      </div>
+    </div>
+    <div class="pt-6 border-t border-white/10 space-y-3">
+      <a href="#contact" class="mobile-nav-link block w-full py-2.5 text-center font-semibold text-white dynamic-theme-btn rounded-xl shadow-lg transition-all">
+        Get In Touch
+      </a>
+      <p class="text-xs text-center text-slate-500">© 2026 Yuvraj Singh</p>
+    </div>
+  </div>
+
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION (3D ZERO-G CENTERPIECE)
+         ========================================================================= -->
+    <section id="hero" class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Text Content (Left Column) -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left z-10">
+            
+
+            <!-- Futuristic Slits Indicator -->
+            <div class="flex items-center justify-center lg:justify-start gap-2 text-xs font-mono font-bold tracking-widest text-slate-400">
+              <span class="future-slits">// // // // //</span>
+              <span class="text-cyan-400">DEVELOPER PORTFOLIO 2026</span>
+            </div>
+
+            <!-- Main Heading with Dynamic Iridescent Gradient -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-heading tracking-tight text-slate-900 dark:text-white leading-[1.12]">
+              Hello, I'm <br class="hidden sm:inline">
+              <span class="text-gradient">Yuvraj Singh</span>
+            </h1>
+
+            <!-- Animated Typewriter Role -->
+            <div class="text-xl sm:text-2xl font-semibold text-slate-700 dark:text-slate-300 h-8 flex items-center justify-center lg:justify-start">
+              <span class="text-slate-500 dark:text-slate-400 mr-2">I am a</span>
+              <span id="typing-text" class="text-cyan-400 font-mono"></span>
+              <span class="typing-cursor"></span>
+            </div>
+
+            <!-- Hero Narrative -->
+            <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+              B.Tech CSE Student exploring intelligent systems and cybersecurity, cloud computing, and AI-powered softwares.
+            </p>
+
+            <!-- Action Buttons with Chromatic Glow -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#projects" class="dynamic-theme-btn px-6 py-3.5 rounded-xl font-bold text-white shadow-xl hover:-translate-y-0.5 transition-all flex items-center gap-2">
+                <span>View Projects</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </a>
+              <a href="#contact" class="px-6 py-3.5 rounded-xl font-semibold text-slate-800 dark:text-white glass-card hover:border-purple-500/50 hover:-translate-y-0.5 transition-all flex items-center gap-2">
+                <span>Get In Touch</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </a>
+              <button type="button" onclick="openCVModal()" class="open-cv-modal px-5 py-3.5 rounded-xl font-semibold text-slate-700 dark:text-slate-200 glass-card hover:border-purple-500/50 hover:-translate-y-0.5 transition-all flex items-center gap-2 cursor-pointer shadow-lg" title="Preview Official CV">
+                <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                <span>Preview CV</span>
+              </button>
+            </div>
+
+            <!-- Social Links & Profiles -->
+            <div class="pt-4 flex items-center justify-center lg:justify-start gap-4 text-slate-500 dark:text-slate-400">
+              <span class="text-xs uppercase tracking-widest font-semibold text-purple-400">Connect:</span>
+              
+              <!-- GitHub -->
+              <a href="https://github.com/yuvrajsingh005317-beep" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl hover:text-white hover:bg-purple-500/20 border border-transparent hover:border-purple-500/30 transition-all" title="GitHub: yuvrajsingh005317-beep">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/yuvraj-singh-317084393/" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl hover:text-white hover:bg-blue-500/20 border border-transparent hover:border-blue-500/30 transition-all" title="LinkedIn: Yuvraj Singh">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:+917985701655" class="p-2.5 rounded-xl hover:text-white hover:bg-emerald-500/20 border border-transparent hover:border-emerald-500/30 transition-all" title="Call: +91 7985701655">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:yuvrajsingh180506@gmail.com" class="p-2.5 rounded-xl hover:text-white hover:bg-pink-500/20 border border-transparent hover:border-pink-500/30 transition-all" title="Email: yuvrajsingh180506@gmail.com">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Hero Visual: 3D Floating Developer Centerpiece (Right Column) -->
+          <div class="lg:col-span-5 flex justify-center z-10">
+            <div class="hero-3d-wrapper relative w-full max-w-lg">
+              
+              <!-- Ambient Glow Behind 3D Character -->
+              <div class="absolute -inset-6 bg-gradient-to-tr from-purple-600/35 via-pink-600/30 to-cyan-500/35 rounded-[48px] blur-2xl opacity-75"></div>
+
+              <!-- Main 3D Card Container -->
+              <div class="hero-3d-card p-6 sm:p-7 animate-float-3d border border-white/15 relative">
+                
+                <!-- Futuristic Header Slits & Bar -->
+                <div class="flex items-center justify-between pb-3.5 mb-2 border-b border-white/10">
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-rose-500 inline-block shadow-sm shadow-rose-500/50"></span>
+                    <span class="w-3 h-3 rounded-full bg-amber-500 inline-block shadow-sm shadow-amber-500/50"></span>
+                    <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block shadow-sm shadow-emerald-500/50"></span>
+                  </div>
+                  <div class="future-slits text-xs font-mono font-bold tracking-widest">// // // // //</div>
+                  <span class="text-[11px] font-mono font-semibold text-purple-300 bg-purple-500/20 px-2.5 py-0.5 rounded-full border border-purple-500/30">
+                    ZERO-G DEV
+                  </span>
+                </div>
+
+                <!-- 3D Character Artwork in Zero-G -->
+                <div class="relative flex items-center justify-center my-3 group">
+                  <img src="assets/hero-3d-character.png" alt="Yuvraj Singh 3D Zero-G Coding" class="w-full max-w-[340px] h-auto object-contain rounded-2xl drop-shadow-[0_20px_35px_rgba(139,92,246,0.4)] transition-transform duration-500 group-hover:scale-105">
+                  
+                  <!-- Floating Micro Widget: Saturn / Cyber Planet (Top Left) -->
+                  <div class="absolute -top-3 -left-3 animate-float-badge-1 glass-card px-3 py-1.5 rounded-2xl flex items-center gap-2 border border-purple-500/40 shadow-xl shadow-purple-500/25 text-xs font-semibold text-white bg-slate-900/90">
+                    <span class="text-base">🪐</span>
+                    <span class="text-purple-300 font-mono text-[11px]">Orbiting Ideas</span>
+                  </div>
+
+                  <!-- Floating Micro Widget: Reaction Emojis (Top Right) -->
+                  <div class="absolute top-2 -right-3 animate-float-badge-2 glass-card px-3 py-1.5 rounded-2xl flex items-center gap-1.5 border border-pink-500/40 shadow-xl shadow-pink-500/25 text-xs font-semibold text-white bg-slate-900/90">
+                    <span>👍</span>
+                    <span>❤️</span>
+                    <span>😎</span>
+                  </div>
+
+                  <!-- Floating Micro Widget: Status (Bottom Right) -->
+                  <div class="absolute -bottom-3 -right-2 animate-float-badge-1 glass-card px-3.5 py-2 rounded-2xl flex items-center gap-2 border border-cyan-500/40 shadow-xl shadow-cyan-500/25 text-xs font-semibold text-white bg-slate-900/90">
+                    <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                    <span class="text-cyan-300 font-mono text-[11px]">Ready to Ship</span>
+                  </div>
+
+                  <!-- Floating Micro Widget: Energy Coffee (Bottom Left) -->
+                  <div class="absolute bottom-6 -left-3 animate-float-badge-2 glass-card px-3 py-1.5 rounded-2xl flex items-center gap-1.5 border border-amber-500/40 shadow-xl shadow-amber-500/25 text-xs font-semibold text-white bg-slate-900/90">
+                    <span>☕</span>
+                    <span class="text-amber-300 font-mono text-[11px]">Fueling Code</span>
+                  </div>
+                </div>
+
+                <!-- Bottom Interactive Status Bar -->
+                <div class="mt-4 pt-3.5 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+                  <span class="text-purple-400 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    B.Tech CSE @ LPU
+                  </span>
+                  <span class="text-slate-400">&lt;C++ • Python • MySQL • Cloud/&gt;</span>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         ABOUT ME SECTION
+         ========================================================================= -->
+    <section id="about" class="py-20 md:py-28 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header with Futuristic Slits -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <span class="future-slits text-xs font-bold">// // // // //</span>
+            <span class="text-xs md:text-sm font-mono uppercase tracking-widest text-purple-400 font-semibold">
+              01. Personal Background
+            </span>
+            <span class="future-slits text-xs font-bold">// // // // //</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 dark:text-white mt-1">
+            About <span class="text-gradient">Me</span>
+          </h2>
+          <div class="w-20 h-1 dynamic-theme-bg mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Highlight Card -->
+          <div class="lg:col-span-5">
+            <div class="glass-card rounded-3xl p-8 border border-white/10 relative overflow-hidden">
+              
+              <!-- Subtle Background Light Effect -->
+              <div class="absolute -top-10 -right-10 w-40 h-40 bg-purple-600/20 rounded-full blur-2xl"></div>
+
+              <!-- Profile Avatar: Half image up to chest -->
+              <div class="relative inline-block mb-6 group">
+                <!-- Glowing ambient aura matching theme -->
+                <div class="absolute -inset-1 rounded-3xl dynamic-theme-bg opacity-50 blur-md group-hover:opacity-80 transition-all duration-300"></div>
+                
+                <div class="relative w-32 h-32 sm:w-36 sm:h-36 rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl bg-slate-900/60">
+                  <img src="assets/yuvraj-chest.jpg" alt="Yuvraj Singh - B.Tech CSE" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                  
+                  <!-- Corner initials badge -->
+                  <div class="absolute bottom-2 right-2 px-2 py-0.5 rounded-lg bg-slate-950/80 backdrop-blur-md border border-white/20 text-[10px] font-mono font-bold text-purple-300 shadow-md">
+                    YS
+                  </div>
+                </div>
+              </div>
+              <h3 class="text-2xl font-bold font-heading text-slate-900 dark:text-white">
+                Yuvraj Singh
+              </h3>
+              <p class="text-purple-400 font-semibold text-sm mt-1">
+                Computer Science & Engineering
+              </p>
+
+              <div class="mt-6 space-y-3.5 text-sm text-slate-600 dark:text-slate-300">
+                <div class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-purple-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Phagwara, Punjab / Lucknow, UP</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>B.Tech CSE @ Lovely Professional Univ.</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <svg class="w-4 h-4 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                  <span>Focus: Cloud, AI & Hardware Systems</span>
+                </div>
+              </div>
+
+              <!-- Quick Badges -->
+              <div class="mt-8 pt-6 border-t border-white/10 flex items-center justify-between">
+                <div>
+                  <div class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">7.4</div>
+                  <div class="text-xs text-slate-500 dark:text-slate-400">B.Tech CGPA</div>
+                </div>
+                <div class="w-px h-8 bg-white/10"></div>
+                <div>
+                  <div class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">94%</div>
+                  <div class="text-xs text-slate-500 dark:text-slate-400">Class X Score</div>
+                </div>
+                <div class="w-px h-8 bg-white/10"></div>
+                <div>
+                  <div class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-amber-400">2</div>
+                  <div class="text-xs text-slate-500 dark:text-slate-400">Industry Certs</div>
+                </div>
+              </div>
+
+              <!-- Quick CV Preview Button in Profile Card -->
+              <button type="button" onclick="openCVModal()" class="open-cv-modal mt-6 w-full py-2.5 px-4 rounded-xl glass-card hover:bg-white/10 border border-white/15 text-xs font-semibold text-purple-300 hover:text-white flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md">
+                <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                <span>Preview Official CV Document</span>
+              </button>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Narrative & Pillars -->
+          <div class="lg:col-span-7 space-y-6">
+            <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 dark:text-white">
+              Engineering with curiosity, solving with precision.
+            </h3>
+            
+            <p class="text-slate-600 dark:text-slate-300 text-base md:text-lg leading-relaxed">
+              I am a B.Tech Computer Science & Engineering student at Lovely Professional University with a passion for building practical systems that bridge software logic, database architecture, and physical engineering. From creating novel acoustic fire-extinguishing hardware to engineering high-efficiency hospital management systems, I approach every challenge with analytical rigor and creativity.
+            </p>
+
+            <p class="text-slate-600 dark:text-slate-300 text-base md:text-lg leading-relaxed">
+              Equipped with strong core competencies in C++, Python, C, JavaScript, and relational databases like MySQL and MS SQL Server, I continuously explore emerging domains in Cloud Computing (Infosys Springboard) and Artificial Intelligence (Saylor Academy) while fostering collaborative problem solving and agile teamwork.
+            </p>
+
+            <!-- 4 Core Pillars Grid from CV Soft Skills & Technical Strengths -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+              <div class="p-4 rounded-2xl glass-card border border-white/10 flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 dark:text-white text-sm">Problem-Solving</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Analytical problem decomposition across C++, Python, and relational database systems.</p>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-2xl glass-card border border-white/10 flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 dark:text-white text-sm">Team Work</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Effective collaboration, transparent technical communication, and shared milestone delivery.</p>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-2xl glass-card border border-white/10 flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 dark:text-white text-sm">Adaptability</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Rapidly mastering new technologies ranging from acoustic hardware to cloud architectures.</p>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-2xl glass-card border border-white/10 flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 dark:text-white text-sm">Hardware & Software Innovation</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Integrating electronic acoustic circuits with modern database-driven software applications.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         ACADEMIC (EDUCATION) SECTION
+         ========================================================================= -->
+    <section id="academic" class="py-20 md:py-28 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header with Slits -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <span class="future-slits text-xs font-bold">// // // // //</span>
+            <span class="text-xs md:text-sm font-mono uppercase tracking-widest text-cyan-400 font-semibold">
+              02. Academic Journey
+            </span>
+            <span class="future-slits text-xs font-bold">// // // // //</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 dark:text-white mt-1">
+            Education & <span class="text-gradient">Academics</span>
+          </h2>
+          <p class="text-slate-500 dark:text-slate-400 text-sm md:text-base mt-3">
+            Solid foundations in computer engineering, theoretical computer science, and mathematics.
+          </p>
+          <div class="w-20 h-1 dynamic-theme-bg mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Academic Timeline -->
+        <div class="max-w-4xl mx-auto relative pl-6 md:pl-0">
+          
+          <!-- Continuous Timeline Stem -->
+          <div class="timeline-stem md:timeline-stem-center"></div>
+
+          <!-- Academic Item 1: Lovely Professional University -->
+          <div class="relative mb-12 md:mb-16 md:grid md:grid-cols-2 md:gap-12 items-center">
+            
+            <!-- Left Side (MD screens) -->
+            <div class="hidden md:block text-right pr-6">
+              <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/30 mb-2">
+                Aug' 25 — Present
+              </span>
+              <h3 class="text-xl font-bold font-heading text-slate-900 dark:text-white">
+                Lovely Professional University
+              </h3>
+              <p class="text-sm font-medium text-slate-500 dark:text-slate-400">Phagwara, Punjab</p>
+              <p class="text-sm font-semibold text-purple-400">Bachelor of Technology (B.Tech) - CSE</p>
+              <div class="text-xs font-bold text-cyan-400 mt-1">CGPA: 7.4</div>
+            </div>
+
+            <!-- Central Timeline Node Icon -->
+            <div class="absolute -left-6 md:left-1/2 top-0 md:top-6 -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-tr from-purple-600 to-cyan-500 border-4 border-slate-900 text-white flex items-center justify-center shadow-lg shadow-purple-500/50 z-10">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/></svg>
+            </div>
+
+            <!-- Right Side: Details Card -->
+            <div class="glass-card rounded-2xl p-6 border border-white/10 ml-4 md:ml-6">
+              <div class="md:hidden mb-2">
+                <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/30 mb-1">
+                  Aug' 25 — Present
+                </span>
+                <h3 class="text-lg font-bold font-heading text-slate-900 dark:text-white">
+                  Lovely Professional University
+                </h3>
+                <p class="text-xs text-slate-400">Phagwara, Punjab • B.Tech CSE</p>
+                <div class="text-xs font-bold text-cyan-400 mt-0.5">CGPA: 7.4</div>
+              </div>
+
+              <h4 class="font-semibold text-sm text-slate-800 dark:text-slate-200 mb-2">Technical Foundations & Coursework:</h4>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="px-2.5 py-1 text-xs rounded-md bg-white/5 text-purple-300 border border-white/10">C++ Programming</span>
+                <span class="px-2.5 py-1 text-xs rounded-md bg-white/5 text-cyan-300 border border-white/10">Python</span>
+                <span class="px-2.5 py-1 text-xs rounded-md bg-white/5 text-slate-300 border border-white/10">C Language</span>
+                <span class="px-2.5 py-1 text-xs rounded-md bg-white/5 text-pink-300 border border-white/10">MySQL & MS SQL Server</span>
+                <span class="px-2.5 py-1 text-xs rounded-md bg-white/5 text-amber-300 border border-white/10">MongoDB</span>
+                <span class="px-2.5 py-1 text-xs rounded-md bg-white/5 text-emerald-300 border border-white/10">Cloud Computing</span>
+              </div>
+
+              <div class="space-y-1.5 text-xs text-slate-400">
+                <p>• Engineering practical systems combining software logic, database architecture, and acoustic hardware circuits.</p>
+                <p>• Exploring Intelligent Systems, Cybersecurity, and Cloud Infrastructures.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Academic Item 2: Army Public School (12th Grade) -->
+          <div class="relative mb-12 md:mb-16 md:grid md:grid-cols-2 md:gap-12 items-center">
+            
+            <!-- Left Side: Card (reversed on desktop) -->
+            <div class="glass-card rounded-2xl p-6 border border-white/10 ml-4 md:ml-0 md:mr-6 order-2 md:order-1">
+              <div class="md:hidden mb-2">
+                <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/30 mb-1">
+                  Mar' 23 — May' 24
+                </span>
+                <h3 class="text-lg font-bold font-heading text-slate-900 dark:text-white">
+                  Army Public School, Lucknow
+                </h3>
+                <p class="text-xs text-slate-400">Senior Secondary (Class XII) • PCM</p>
+                <div class="text-xs font-bold text-cyan-400 mt-0.5">Score: 75%</div>
+              </div>
+
+              <p class="text-xs md:text-sm text-slate-600 dark:text-slate-300 mb-3">
+                Completed Senior Secondary education with rigorous focus in Physics, Chemistry, and Mathematics (PCM).
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 mb-3">
+                <span class="px-2 py-0.5 text-xs rounded bg-pink-500/10 text-pink-400 font-medium">Physics</span>
+                <span class="px-2 py-0.5 text-xs rounded bg-pink-500/10 text-pink-400 font-medium">Chemistry</span>
+                <span class="px-2 py-0.5 text-xs rounded bg-pink-500/10 text-pink-400 font-medium">Mathematics</span>
+                <span class="px-2 py-0.5 text-xs rounded bg-purple-500/10 text-purple-400 font-medium">PCM Stream</span>
+              </div>
+
+              <div class="text-xs text-slate-400 space-y-1">
+                <p>• Developed strong analytical fundamentals and mathematical logic underlying computer algorithms.</p>
+                <p>• Participated actively in academic projects and scientific competitions.</p>
+              </div>
+            </div>
+
+            <!-- Central Node -->
+            <div class="absolute -left-6 md:left-1/2 top-0 md:top-6 -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-tr from-pink-600 to-purple-600 border-4 border-slate-900 text-white flex items-center justify-center shadow-lg shadow-pink-500/50 z-10 order-1">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+
+            <!-- Right Side (For desktop) -->
+            <div class="hidden md:block text-left pl-6 order-3">
+              <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/30 mb-2">
+                Mar' 23 — May' 24
+              </span>
+              <h3 class="text-xl font-bold font-heading text-slate-900 dark:text-white">
+                Army Public School
+              </h3>
+              <p class="text-sm font-medium text-slate-500 dark:text-slate-400">Lucknow, Uttar Pradesh</p>
+              <p class="text-sm font-semibold text-pink-400">Senior Secondary (Class XII) - PCM</p>
+              <div class="text-xs font-bold text-cyan-400 mt-1">Percentage: 75%</div>
+            </div>
+
+          </div>
+
+          <!-- Academic Item 3: Army Public School (10th Grade) -->
+          <div class="relative md:grid md:grid-cols-2 md:gap-12 items-center">
+            
+            <div class="hidden md:block text-right pr-6">
+              <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 mb-2">
+                Mar' 22 — May' 23
+              </span>
+              <h3 class="text-xl font-bold font-heading text-slate-900 dark:text-white">
+                Army Public School
+              </h3>
+              <p class="text-sm font-medium text-slate-500 dark:text-slate-400">Lucknow, Uttar Pradesh</p>
+              <p class="text-sm font-semibold text-cyan-400">Secondary School (Class X)</p>
+              <div class="text-xs font-bold text-cyan-400 mt-1">Score: 94% (High Distinction)</div>
+            </div>
+
+            <div class="absolute -left-6 md:left-1/2 top-0 md:top-6 -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 border-4 border-slate-900 text-white flex items-center justify-center shadow-lg shadow-cyan-500/50 z-10">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            </div>
+
+            <div class="glass-card rounded-2xl p-6 border border-white/10 ml-4 md:ml-6">
+              <div class="md:hidden mb-2">
+                <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 mb-1">
+                  Mar' 22 — May' 23
+                </span>
+                <h3 class="text-lg font-bold font-heading text-slate-900 dark:text-white">
+                  Army Public School, Lucknow
+                </h3>
+                <p class="text-xs text-slate-400">Secondary School (Class X)</p>
+                <div class="text-xs font-bold text-cyan-400 mt-0.5">Score: 94% Distinction</div>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 dark:text-slate-300 mb-3">
+                Achieved exceptional academic distinction with 94% aggregate marks, demonstrating excellence across Mathematics, Science, and Social Studies.
+              </p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 text-xs rounded bg-cyan-500/10 text-cyan-400 font-medium">94% Aggregate</span>
+                <span class="px-2 py-0.5 text-xs rounded bg-purple-500/10 text-purple-400 font-medium">Distinction</span>
+                <span class="px-2 py-0.5 text-xs rounded bg-white/5 text-slate-300 font-medium">Science & Math</span>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Live Visual CV Document Preview Showcase -->
+        <div class="mt-16 max-w-4xl mx-auto">
+          <div class="glass-card rounded-3xl p-6 sm:p-8 border border-white/15 shadow-2xl relative overflow-hidden">
+            <!-- Background Glow Aura -->
+            <div class="absolute -top-16 -right-16 w-60 h-60 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-8">
+              <!-- Left: Clickable Live CV Paper Preview -->
+              <div class="w-full md:w-5/12 flex-shrink-0 cursor-pointer group" onclick="openCVModal()" title="Click to Expand Official CV">
+                <div class="relative rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl bg-white p-2 transition-all duration-300 group-hover:scale-[1.02] group-hover:shadow-purple-500/20">
+                  <img src="assets/yuvraj-cv.png" alt="Yuvraj Singh Official CV Preview" class="w-full h-auto rounded-lg object-contain shadow-inner">
+                  
+                  <!-- Hover Overlay -->
+                  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl">
+                    <span class="px-4 py-2 rounded-xl bg-purple-600 text-white font-semibold text-xs shadow-lg flex items-center gap-2">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                      Click to View Full Size
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Description & Action Buttons -->
+              <div class="w-full md:w-7/12 space-y-4 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-mono font-semibold">
+                  <svg class="w-3.5 h-3.5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Verified Curriculum Vitae</span>
+                </div>
+
+                <h3 class="text-2xl sm:text-3xl font-extrabold font-heading text-slate-900 dark:text-white">
+                  Yuvraj Singh — Official CV
+                </h3>
+
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                  Verified curriculum vitae covering academic records at Lovely Professional University, sound-wave extinguisher project, hospital management system, and industry certifications.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-2">
+                  <button type="button" onclick="openCVModal()" class="px-5 py-3 rounded-xl dynamic-theme-btn font-bold text-white shadow-xl hover:-translate-y-0.5 transition-all flex items-center gap-2 cursor-pointer text-xs sm:text-sm">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                    <span>Full Screen Preview</span>
+                  </button>
+
+                  <a href="assets/yuvraj-cv.png" download="Yuvraj_Singh_CV.png" class="px-4 py-3 rounded-xl glass-card hover:bg-white/10 border border-white/20 text-slate-700 dark:text-slate-200 font-semibold text-xs sm:text-sm transition-all flex items-center gap-2">
+                    <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                    <span>Download</span>
+                  </a>
+
+                  <button type="button" onclick="printCVDoc()" class="p-3 rounded-xl glass-card hover:bg-white/10 border border-white/20 text-slate-400 hover:text-white transition-all cursor-pointer" title="Print CV">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SKILLS SECTION
+         ========================================================================= -->
+    <section id="skills" class="py-20 md:py-28 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header with Slits -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <span class="future-slits text-xs font-bold">// // // // //</span>
+            <span class="text-xs md:text-sm font-mono uppercase tracking-widest text-pink-400 font-semibold">
+              03. Technical Competencies
+            </span>
+            <span class="future-slits text-xs font-bold">// // // // //</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 dark:text-white mt-1">
+            Technical <span class="text-gradient">Skills</span>
+          </h2>
+          <p class="text-slate-500 dark:text-slate-400 text-sm md:text-base mt-3">
+            A comprehensive breakdown of languages, frameworks, cloud platforms, and developer tools.
+          </p>
+          <div class="w-20 h-1 dynamic-theme-bg mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Category 1: Programming Languages -->
+          <div class="glass-card rounded-3xl p-8 border border-white/10">
+            <div class="flex items-center gap-3.5 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center border border-purple-500/20">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold font-heading text-xl text-slate-900 dark:text-white">Programming Languages</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Core algorithmic logic and application syntax</p>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-800 dark:text-slate-200">C++</span>
+                  <span class="text-purple-400 font-mono">30%</span>
+                </div>
+                <div class="w-full h-2 bg-slate-200 dark:bg-white/5 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 30%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-800 dark:text-slate-200">Python</span>
+                  <span class="text-purple-400 font-mono">28%</span>
+                </div>
+                <div class="w-full h-2 bg-slate-200 dark:bg-white/5 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full" style="width: 28%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-800 dark:text-slate-200">C</span>
+                  <span class="text-purple-400 font-mono">25%</span>
+                </div>
+                <div class="w-full h-2 bg-slate-200 dark:bg-white/5 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full" style="width: 25%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-800 dark:text-slate-200">JavaScript</span>
+                  <span class="text-purple-400 font-mono">24%</span>
+                </div>
+                <div class="w-full h-2 bg-slate-200 dark:bg-white/5 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-pink-500 to-amber-400 rounded-full" style="width: 24%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-800 dark:text-slate-200">HTML5</span>
+                  <span class="text-purple-400 font-mono">30%</span>
+                </div>
+                <div class="w-full h-2 bg-slate-200 dark:bg-white/5 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-amber-400 to-rose-500 rounded-full" style="width: 30%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Databases, Tools & Platforms -->
+          <div class="glass-card rounded-3xl p-8 border border-white/10">
+            <div class="flex items-center gap-3.5 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center border border-cyan-500/20">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold font-heading text-xl text-slate-900 dark:text-white">Tools & Platforms</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Database architecture & version control</p>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-800 dark:text-slate-200">MySQL</span>
+                  <span class="text-cyan-400 font-mono">28%</span>
+                </div>
+                <div class="w-full h-2 bg-slate-200 dark:bg-white/5 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full" style="width: 28%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-800 dark:text-slate-200">MongoDB</span>
+                  <span class="text-cyan-400 font-mono">25%</span>
+                </div>
+                <div class="w-full h-2 bg-slate-200 dark:bg-white/5 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-full" style="width: 25%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-800 dark:text-slate-200">MS SQL Server</span>
+                  <span class="text-cyan-400 font-mono">22%</span>
+                </div>
+                <div class="w-full h-2 bg-slate-200 dark:bg-white/5 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full" style="width: 22%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-800 dark:text-slate-200">GitHub</span>
+                  <span class="text-cyan-400 font-mono">30%</span>
+                </div>
+                <div class="w-full h-2 bg-slate-200 dark:bg-white/5 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-full" style="width: 30%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Specializations & Certified Domains -->
+          <div class="glass-card rounded-3xl p-8 border border-white/10">
+            <div class="flex items-center gap-3.5 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center border border-pink-500/20">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold font-heading text-xl text-slate-900 dark:text-white">Technical Specializations</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Certified & applied engineering domains</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                <span class="text-xs font-mono text-pink-400 font-bold block mb-1">CLOUD COMPUTING</span>
+                <p class="text-xs text-slate-300">Virtualization, cloud architectures & distributed services (Infosys Springboard).</p>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                <span class="text-xs font-mono text-purple-400 font-bold block mb-1">ARTIFICIAL INTELLIGENCE</span>
+                <p class="text-xs text-slate-300">Intelligent system design & practical AI applications (Saylor Academy).</p>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                <span class="text-xs font-mono text-cyan-400 font-bold block mb-1">ACOUSTIC SYSTEMS</span>
+                <p class="text-xs text-slate-300">Acoustic flame disruption, sound amplifier integration, and power circuits.</p>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                <span class="text-xs font-mono text-emerald-400 font-bold block mb-1">DATA INTEGRITY</span>
+                <p class="text-xs text-slate-300">Transactional relational databases reducing record retrieval time by 30%.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Soft Skills & Team Culture -->
+          <div class="glass-card rounded-3xl p-8 border border-white/10">
+            <div class="flex items-center gap-3.5 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center border border-amber-500/20">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold font-heading text-xl text-slate-900 dark:text-white">Soft Skills</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Collaboration & professional strengths from CV</p>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3.5">
+                <span class="text-xl">💡</span>
+                <div>
+                  <h4 class="font-semibold text-slate-900 dark:text-white text-sm">Problem-Solving</h4>
+                  <p class="text-xs text-slate-400">Analytical decomposition of complex technical and algorithmic challenges.</p>
+                </div>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3.5">
+                <span class="text-xl">🤝</span>
+                <div>
+                  <h4 class="font-semibold text-slate-900 dark:text-white text-sm">Team Work</h4>
+                  <p class="text-xs text-slate-400">Collaborative mindset, effective technical communication, and shared execution.</p>
+                </div>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3.5">
+                <span class="text-xl">⚡</span>
+                <div>
+                  <h4 class="font-semibold text-slate-900 dark:text-white text-sm">Adaptability</h4>
+                  <p class="text-xs text-slate-400">Quickly pivoting across hardware electronics, backend databases, and emerging tech.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tech Stack Pill Ribbon -->
+        <div class="mt-12 p-6 rounded-2xl glass-panel border border-white/10 text-center">
+          <p class="text-xs uppercase font-mono tracking-widest text-purple-400 mb-4 font-bold">// TECH STACK & TOOLS (FROM CV)</p>
+          <div class="flex flex-wrap justify-center items-center gap-2 md:gap-3">
+            <span class="px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-purple-300 border border-purple-500/20">C++</span>
+            <span class="px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-cyan-300 border border-cyan-500/20">Python</span>
+            <span class="px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-pink-300 border border-pink-500/20">C</span>
+            <span class="px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-amber-300 border border-amber-500/20">JavaScript</span>
+            <span class="px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-emerald-300 border border-emerald-500/20">HTML</span>
+            <span class="px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-cyan-300 border border-cyan-500/20">MySQL</span>
+            <span class="px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-purple-300 border border-purple-500/20">MongoDB</span>
+            <span class="px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-pink-300 border border-pink-500/20">MS SQL Server</span>
+            <span class="px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-amber-300 border border-amber-500/20">GitHub</span>
+            <span class="px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-emerald-300 border border-emerald-500/20">Cloud Computing</span>
+            <span class="px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-purple-300 border border-purple-500/20">Artificial Intelligence</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         PROJECTS SECTION
+         ========================================================================= -->
+    <section id="projects" class="py-20 md:py-28 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header with Slits -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <span class="future-slits text-xs font-bold">// // // // //</span>
+            <span class="text-xs md:text-sm font-mono uppercase tracking-widest text-cyan-400 font-semibold">
+              04. Portfolio Showcase
+            </span>
+            <span class="future-slits text-xs font-bold">// // // // //</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 dark:text-white mt-1">
+            Featured <span class="text-gradient">Projects</span>
+          </h2>
+          <p class="text-slate-500 dark:text-slate-400 text-sm md:text-base mt-3">
+            Real-world applications showcasing scalable architecture, clean code, and UI craftsmanship.
+          </p>
+          <div class="w-20 h-1 dynamic-theme-bg mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-12">
+          <button type="button" data-filter="all" class="filter-btn px-4 py-2 rounded-xl text-xs md:text-sm font-semibold dynamic-theme-btn text-white transition-all">
+            All Projects
+          </button>
+          <button type="button" data-filter="hardware" class="filter-btn px-4 py-2 rounded-xl text-xs md:text-sm font-semibold glass-card text-slate-300 hover:text-white transition-all">
+            Hardware & Innovation
+          </button>
+          <button type="button" data-filter="software" class="filter-btn px-4 py-2 rounded-xl text-xs md:text-sm font-semibold glass-card text-slate-300 hover:text-white transition-all">
+            Software & Database
+          </button>
+        </div>
+
+        <!-- Project Grid (CV Projects) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          
+          <!-- Project 1: Sound Wave Fire Extinguisher -->
+          <div class="project-card glass-card rounded-3xl overflow-hidden border border-white/10 flex flex-col justify-between transition-all duration-300" data-category="hardware">
+            <div>
+              <div class="h-48 bg-gradient-to-br from-rose-600/30 via-red-600/25 to-purple-600/30 flex items-center justify-center p-6 relative border-b border-white/10">
+                <div class="w-16 h-16 rounded-2xl bg-rose-500/15 border border-rose-500/30 text-rose-400 flex items-center justify-center shadow-lg shadow-rose-500/20">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/></svg>
+                </div>
+                <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-[11px] font-mono font-bold bg-gradient-to-r from-rose-600 to-pink-600 text-white shadow-md">
+                  FEB '26
+                </span>
+              </div>
+
+              <div class="p-6">
+                <div class="text-xs font-mono text-rose-400 font-semibold mb-1">Acoustic Engineering & Innovation</div>
+                <h3 class="text-xl font-bold font-heading text-slate-900 dark:text-white mb-2">
+                  Sound Wave Fire Extinguisher
+                </h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                  Engineered a chemical-free fire suppression system utilizing low-frequency acoustic sound waves to disrupt flame boundary layers and suppress active combustion through sound wave disturbance.
+                </p>
+
+                <div class="flex flex-wrap gap-1.5 mb-4">
+                  <span class="px-2 py-1 text-xs font-medium rounded-md bg-white/5 text-rose-300 border border-white/10">Low-Frequency Waves</span>
+                  <span class="px-2 py-1 text-xs font-medium rounded-md bg-white/5 text-purple-300 border border-white/10">Amplifier Circuit</span>
+                  <span class="px-2 py-1 text-xs font-medium rounded-md bg-white/5 text-cyan-300 border border-white/10">Speaker & Power</span>
+                  <span class="px-2 py-1 text-xs font-medium rounded-md bg-white/5 text-emerald-300 border border-white/10">Acoustics</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0 border-t border-white/10 flex items-center justify-between mt-4">
+              <button type="button" data-project-id="1" class="open-project-modal text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1 transition-colors">
+                <span>View Details & Specs</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+              <div class="flex items-center gap-2">
+                <a href="https://github.com/yuvrajsingh005317-beep" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-white/10 transition-colors" title="GitHub Repository">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Hospital Management System -->
+          <div class="project-card glass-card rounded-3xl overflow-hidden border border-white/10 flex flex-col justify-between transition-all duration-300" data-category="software">
+            <div>
+              <div class="h-48 bg-gradient-to-br from-cyan-600/30 via-teal-600/25 to-blue-600/30 flex items-center justify-center p-6 relative border-b border-white/10">
+                <div class="w-16 h-16 rounded-2xl bg-cyan-500/15 border border-cyan-500/30 text-cyan-400 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                </div>
+                <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-[11px] font-mono font-bold bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md">
+                  JAN '24
+                </span>
+              </div>
+
+              <div class="p-6">
+                <div class="text-xs font-mono text-cyan-400 font-semibold mb-1">Full Stack & Database Architecture</div>
+                <h3 class="text-xl font-bold font-heading text-slate-900 dark:text-white mb-2">
+                  Hospital Management System
+                </h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                  Streamlined hospital operations using JavaScript, Python, and MySQL. Slashing manual paperwork by 40%, boosting staff operational efficiency by 50%, and enhancing medical record retrieval by 30%.
+                </p>
+
+                <div class="flex flex-wrap gap-1.5 mb-4">
+                  <span class="px-2 py-1 text-xs font-medium rounded-md bg-white/5 text-cyan-300 border border-white/10">JavaScript</span>
+                  <span class="px-2 py-1 text-xs font-medium rounded-md bg-white/5 text-amber-300 border border-white/10">Python</span>
+                  <span class="px-2 py-1 text-xs font-medium rounded-md bg-white/5 text-emerald-300 border border-white/10">MySQL</span>
+                  <span class="px-2 py-1 text-xs font-medium rounded-md bg-white/5 text-purple-300 border border-white/10">Schema Optimization</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0 border-t border-white/10 flex items-center justify-between mt-4">
+              <button type="button" data-project-id="2" class="open-project-modal text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1 transition-colors">
+                <span>View Details & Specs</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+              <div class="flex items-center gap-2">
+                <a href="https://github.com/yuvrajsingh005317-beep" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-white/10 transition-colors" title="GitHub Repository">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         CERTIFICATES SECTION
+         ========================================================================= -->
+    <section id="certificates" class="py-20 md:py-28 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header with Slits -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <span class="future-slits text-xs font-bold">// // // // //</span>
+            <span class="text-xs md:text-sm font-mono uppercase tracking-widest text-purple-400 font-semibold">
+              05. Continuous Learning
+            </span>
+            <span class="future-slits text-xs font-bold">// // // // //</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 dark:text-white mt-1">
+            Licenses & <span class="text-gradient">Certifications</span>
+          </h2>
+          <p class="text-slate-500 dark:text-slate-400 text-sm md:text-base mt-3">
+            Industry-recognized credentials validating specialized skills in cloud, frontend, algorithms, and backend systems.
+          </p>
+          <div class="w-20 h-1 dynamic-theme-bg mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Certificates Grid (Authentic CV Credentials) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8">
+          
+          <!-- Cert 1: Introduction to Cloud Computing -->
+          <div class="glass-card rounded-3xl p-7 border border-white/10 flex flex-col justify-between transition-all duration-300 hover:border-cyan-500/40">
+            <div>
+              <div class="flex items-start justify-between gap-4 mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-cyan-500/15 text-cyan-400 flex items-center justify-center border border-cyan-500/30 flex-shrink-0 shadow-lg shadow-cyan-500/10">
+                  <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                </div>
+                <span class="text-xs font-mono px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/25 font-semibold">
+                  Verified Credential
+                </span>
+              </div>
+
+              <h3 class="font-bold font-heading text-xl text-slate-900 dark:text-white mb-1.5">
+                Introduction to Cloud Computing
+              </h3>
+              <p class="text-sm font-semibold text-cyan-400 dark:text-cyan-300 mb-3">
+                Infosys Springboard
+              </p>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-5">
+                Comprehensive certification covering cloud architecture fundamentals, virtualization models (IaaS, PaaS, SaaS), distributed storage, and cloud cybersecurity principles.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 mb-6">
+                <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-white/5 text-cyan-200 border border-white/10">Cloud Architecture</span>
+                <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-white/5 text-cyan-200 border border-white/10">IaaS / PaaS / SaaS</span>
+                <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-white/5 text-cyan-200 border border-white/10">Virtualization</span>
+                <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-white/5 text-cyan-200 border border-white/10">Security Fundamentals</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400">ID: INFOSYS-CLOUD-COMP</span>
+              <button type="button" data-cert-id="1" class="open-cert-modal text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1 transition-colors">
+                <span>Verify Credential</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 2: Building With Artificial Intelligence -->
+          <div class="glass-card rounded-3xl p-7 border border-white/10 flex flex-col justify-between transition-all duration-300 hover:border-purple-500/40">
+            <div>
+              <div class="flex items-start justify-between gap-4 mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-purple-500/15 text-purple-400 flex items-center justify-center border border-purple-500/30 flex-shrink-0 shadow-lg shadow-purple-500/10">
+                  <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <span class="text-xs font-mono px-3 py-1 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/25 font-semibold">
+                  Verified Credential
+                </span>
+              </div>
+
+              <h3 class="font-bold font-heading text-xl text-slate-900 dark:text-white mb-1.5">
+                Building With Artificial Intelligence
+              </h3>
+              <p class="text-sm font-semibold text-purple-400 dark:text-purple-300 mb-3">
+                Saylor Academy
+              </p>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-5">
+                Accredited specialization validating foundational knowledge in artificial intelligence principles, intelligent agent architectures, machine learning paradigms, and AI software system development.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 mb-6">
+                <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-white/5 text-purple-200 border border-white/10">Intelligent Systems</span>
+                <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-white/5 text-purple-200 border border-white/10">Machine Learning</span>
+                <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-white/5 text-purple-200 border border-white/10">AI Software Design</span>
+                <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-white/5 text-purple-200 border border-white/10">Practical AI</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400">ID: SAYLOR-AI-ENGINEERING</span>
+              <button type="button" data-cert-id="2" class="open-cert-modal text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1 transition-colors">
+                <span>Verify Credential</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         CONTACT ME SECTION
+         ========================================================================= -->
+    <section id="contact" class="py-20 md:py-28 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header with Slits -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <span class="future-slits text-xs font-bold">// // // // //</span>
+            <span class="text-xs md:text-sm font-mono uppercase tracking-widest text-cyan-400 font-semibold">
+              06. Let's Connect
+            </span>
+            <span class="future-slits text-xs font-bold">// // // // //</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 dark:text-white mt-1">
+            Get in <span class="text-gradient">Touch</span>
+          </h2>
+          <p class="text-slate-500 dark:text-slate-400 text-sm md:text-base mt-3">
+            Have a project in mind, want to discuss software engineering roles, or just want to say hi? My inbox is always open.
+          </p>
+          <div class="w-20 h-1 dynamic-theme-bg mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Cards (Left Column) -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <!-- Email Card with Copy Button -->
+            <div class="glass-card rounded-3xl p-6 border border-white/10 flex items-start justify-between gap-4">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center border border-purple-500/20 flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 dark:text-white text-base">Direct Email</h4>
+                  <a href="mailto:yuvrajsingh180506@gmail.com" class="text-sm text-purple-400 hover:underline break-all font-mono">
+                    yuvrajsingh180506@gmail.com
+                  </a>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Average response time: &lt; 12 hours</p>
+                </div>
+              </div>
+              <button type="button" data-email="yuvrajsingh180506@gmail.com" class="copy-email-btn p-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 transition-colors" title="Copy Email">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+              </button>
+            </div>
+
+            <!-- Phone & WhatsApp Card -->
+            <div class="glass-card rounded-3xl p-6 border border-white/10 flex items-start justify-between gap-4">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center border border-emerald-500/20 flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 dark:text-white text-base">Phone & WhatsApp</h4>
+                  <a href="tel:+917985701655" class="text-sm text-emerald-400 hover:underline font-mono">
+                    +91 7985701655
+                  </a>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Available for calls & direct WhatsApp chat</p>
+                </div>
+              </div>
+              <a href="https://wa.me/917985701655" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/20 text-emerald-300 transition-colors" title="Chat on WhatsApp">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              </a>
+            </div>
+
+            <!-- Location Card -->
+            <div class="glass-card rounded-3xl p-6 border border-white/10 flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center border border-cyan-500/20 flex-shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-base">Location</h4>
+                <p class="text-sm font-semibold text-slate-800 dark:text-slate-200">Phagwara, Punjab & Lucknow, UP</p>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Lovely Professional University Campus • Open to on-site, hybrid & remote software roles</p>
+              </div>
+            </div>
+
+            <!-- Social Professional Handles -->
+            <div class="glass-card rounded-3xl p-6 border border-white/10">
+              <h4 class="font-bold text-slate-900 dark:text-white text-base mb-4">Professional Profiles</h4>
+              <div class="grid grid-cols-2 gap-3">
+                <a href="https://www.linkedin.com/in/yuvraj-singh-317084393/" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-white/5 hover:bg-blue-500/10 hover:border-blue-500/30 border border-white/5 transition-all flex items-center gap-2.5">
+                  <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  <div>
+                    <span class="text-xs font-semibold text-slate-800 dark:text-slate-200 block">LinkedIn</span>
+                    <span class="text-[10px] text-slate-500">yuvraj-singh</span>
+                  </div>
+                </a>
+                <a href="https://github.com/yuvrajsingh005317-beep" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-white/5 hover:bg-purple-500/10 hover:border-purple-500/30 border border-white/5 transition-all flex items-center gap-2.5">
+                  <svg class="w-5 h-5 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <div>
+                    <span class="text-xs font-semibold text-slate-800 dark:text-slate-200 block">GitHub</span>
+                    <span class="text-[10px] text-slate-500">yuvrajsingh005317</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive Contact Form (Right Column) -->
+          <div class="lg:col-span-7">
+            <div class="glass-card rounded-3xl p-8 border border-white/10 shadow-2xl">
+              <h3 class="text-2xl font-bold font-heading text-slate-900 dark:text-white mb-2">
+                Send a Message
+              </h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-6">
+                Fill out the form below and I'll get back to you promptly.
+              </p>
+
+              <form id="contact-form" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <!-- Name Input -->
+                  <div>
+                    <label for="name" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                      Your Name <span class="text-pink-500">*</span>
+                    </label>
+                    <input type="text" id="name" name="name" required placeholder="e.g. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-300 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50 transition-all">
+                  </div>
+
+                  <!-- Email Input -->
+                  <div>
+                    <label for="email" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                      Your Email <span class="text-pink-500">*</span>
+                    </label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-300 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50 transition-all">
+                  </div>
+                </div>
+
+                <!-- Subject Input -->
+                <div>
+                  <label for="subject" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                    Subject <span class="text-pink-500">*</span>
+                  </label>
+                  <input type="text" id="subject" name="subject" required placeholder="Project Inquiry / Job Opportunity" class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-300 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50 transition-all">
+                </div>
+
+                <!-- Message Input -->
+                <div>
+                  <label for="message" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                    Message <span class="text-pink-500">*</span>
+                  </label>
+                  <textarea id="message" name="message" rows="5" required placeholder="Describe your project, opportunity, or idea in detail..." class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-300 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50 transition-all resize-none"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="pt-2">
+                  <button type="submit" id="submit-btn" class="w-full py-3.5 px-6 rounded-xl font-bold text-white dynamic-theme-btn shadow-xl transition-all flex items-center justify-center gap-2 cursor-pointer">
+                    <span>Send Message</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="py-12 border-t border-white/10 glass-panel text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-purple-600 to-cyan-500 flex items-center justify-center text-white font-mono font-bold text-xs">
+          YS
+        </div>
+        <span class="text-sm font-semibold text-white">
+          Yuvraj Singh
+        </span>
+        <span class="text-xs text-slate-500">| Zero-G Portfolio</span>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-6 text-xs font-medium">
+        <a href="#hero" class="hover:text-purple-400 transition-colors">Home</a>
+        <a href="#about" class="hover:text-purple-400 transition-colors">About</a>
+        <a href="#academic" class="hover:text-purple-400 transition-colors">Academics</a>
+        <a href="#skills" class="hover:text-purple-400 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-purple-400 transition-colors">Projects</a>
+        <a href="#certificates" class="hover:text-purple-400 transition-colors">Certificates</a>
+        <a href="#contact" class="hover:text-purple-400 transition-colors">Contact</a>
+      </div>
+
+      <p class="text-xs text-slate-500 text-center md:text-right">
+        Designed & Built with precision © 2026 Yuvraj Singh.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- =========================================================================
+       DYNAMIC MODAL (PROJECTS & CERTIFICATES)
+       ========================================================================= -->
+  <div id="details-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-xl hidden" role="dialog" aria-modal="true">
+    <div id="modal-container" class="modal-content relative w-full max-w-2xl bg-slate-900 rounded-3xl p-6 sm:p-8 border border-white/15 shadow-2xl max-h-[90vh] overflow-y-auto">
+      <!-- Close Modal Button -->
+      <button id="close-modal-btn" type="button" class="absolute top-5 right-5 p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 transition-colors" aria-label="Close modal">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Dynamic Content Injection Area -->
+      <div id="modal-content-area"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       CURRICULUM VITAE (CV) PREVIEW MODAL
+       ========================================================================= -->
+  <div id="cv-modal" class="modal-backdrop fixed inset-0 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-xl hidden" style="z-index: 99999; display: none;" onclick="if(event.target===this) closeCVModal()" role="dialog" aria-modal="true">
+    <div class="modal-content relative w-full max-w-3xl bg-slate-900 rounded-3xl border border-white/15 shadow-2xl overflow-hidden flex flex-col max-h-[92vh]">
+      
+      <!-- Modal Header Bar -->
+      <div class="p-4 sm:p-5 border-b border-white/10 flex items-center justify-between bg-slate-950/75 backdrop-blur-md">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-500/15 text-purple-400 border border-purple-500/30 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <div>
+            <h3 class="text-base sm:text-lg font-bold font-heading text-white flex items-center gap-2">
+              <span>Yuvraj Singh — CV</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Verified</span>
+            </h3>
+            <p class="text-xs text-slate-400">B.Tech Computer Science & Engineering</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <!-- Download Button -->
+          <a href="assets/yuvraj-cv.png" download="Yuvraj_Singh_CV.png" class="px-3 py-1.5 rounded-xl bg-purple-600/20 hover:bg-purple-600/30 border border-purple-500/30 text-xs font-semibold text-purple-300 hover:text-white transition-all flex items-center gap-1.5" title="Download CV Image">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span class="hidden sm:inline">Download</span>
+          </a>
+
+          <!-- Print Button -->
+          <button type="button" id="print-cv-btn" onclick="printCVDoc()" class="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-slate-300 hover:text-white transition-colors flex items-center gap-1.5 cursor-pointer" title="Print CV">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+            <span class="hidden sm:inline">Print</span>
+          </button>
+
+          <!-- Open in New Tab Button -->
+          <a href="assets/yuvraj-cv.png" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-400 hover:text-white transition-colors" title="Open Full Size">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+
+          <!-- Close Modal Button -->
+          <button id="close-cv-modal-btn" type="button" onclick="closeCVModal()" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer" aria-label="Close CV modal">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body (Clean Document Presentation) -->
+      <div class="p-4 sm:p-6 overflow-y-auto flex items-center justify-center bg-slate-950/60">
+        <div class="max-w-xl w-full bg-white rounded-2xl shadow-2xl p-2 sm:p-4 border border-slate-200">
+          <img src="assets/yuvraj-cv.png" alt="Yuvraj Singh Official CV" class="w-full h-auto rounded-lg shadow-sm object-contain">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       FLOATING BACK TO TOP BUTTON
+       ========================================================================= -->
+  <button id="back-to-top" type="button" class="fixed bottom-6 left-6 z-40 p-3 rounded-xl dynamic-theme-btn text-white opacity-0 pointer-events-none translate-y-4 transition-all duration-300" aria-label="Back to top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
+
+  <!-- =========================================================================
+       FLOATING QUICK THEME COLOR DOCK
+       ========================================================================= -->
+  <aside class="quick-theme-dock" aria-label="Quick Theme Color Selection">
+    <div class="flex items-center gap-1.5 pr-2 border-r border-white/20 text-slate-300">
+      <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4 4.5 4.5 0 011.66-3.48L11 6l5 5-7.52 7.52A4 4 0 017 21z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l7 7m-3 3l-3-3"/></svg>
+      <span class="text-xs font-mono font-bold tracking-wider hidden sm:inline text-slate-200">Theme</span>
+    </div>
+    
+    <button type="button" data-theme-color="cosmic" data-tooltip="Cosmic Violet" class="color-swatch-dock-btn" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);" aria-label="Cosmic Violet Theme"></button>
+    <button type="button" data-theme-color="emerald" data-tooltip="Matrix Emerald" class="color-swatch-dock-btn" style="background: linear-gradient(135deg, #10b981, #06b6d4);" aria-label="Matrix Emerald Theme"></button>
+    <button type="button" data-theme-color="sunset" data-tooltip="Sunset Gold" class="color-swatch-dock-btn" style="background: linear-gradient(135deg, #f59e0b, #f43f5e);" aria-label="Sunset Gold Theme"></button>
+    <button type="button" data-theme-color="blue" data-tooltip="Electric Blue" class="color-swatch-dock-btn" style="background: linear-gradient(135deg, #3b82f6, #06b6d4);" aria-label="Electric Blue Theme"></button>
+    <button type="button" data-theme-color="magenta" data-tooltip="Neon Magenta" class="color-swatch-dock-btn" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);" aria-label="Neon Magenta Theme"></button>
+  </aside>
+
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Inline Fail-Safe CV Controller -->
+  <script>
+    window.openCVModal = function() {
+      var modal = document.getElementById('cv-modal');
+      if (!modal) return;
+      modal.classList.remove('hidden');
+      modal.style.display = 'flex';
+      modal.style.visibility = 'visible';
+      modal.style.opacity = '1';
+      modal.style.zIndex = '99999';
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeCVModal = function() {
+      var modal = document.getElementById('cv-modal');
+      if (!modal) return;
+      modal.classList.remove('active');
+      modal.style.opacity = '0';
+      modal.style.visibility = 'hidden';
+      setTimeout(function() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+      }, 250);
+    };
+
+    window.printCVDoc = function() {
+      var printWin = window.open('assets/yuvraj-cv.png', '_blank');
+      if (printWin) {
+        printWin.addEventListener('load', function() {
+          printWin.focus();
+          printWin.print();
+        });
+      }
+    };
+  </script>
+
+  <!-- Main JavaScript File with Cache Busting -->
+  <script src="js/main.js?v=20260907.3"></script>
+</body>
+</html>
