@@ -312,18 +312,24 @@ const certificateData = {
   1: {
     title: "Introduction to Cloud Computing",
     issuer: "Infosys Springboard",
-    date: "Verified",
+    date: "March 25, 2026",
     id: "INFOSYS-CLOUD-COMP",
+    img: "assets/cert-infosys-cloud.png",
+    downloadName: "Yuvraj_Singh_Infosys_Cloud_Certificate.png",
+    verifyUrl: "https://verify.onwingspan.com",
     skills: ["Cloud Architecture", "IaaS / PaaS / SaaS", "Virtualization", "Cloud Security", "Enterprise Deployment"],
-    description: "Industry certification through Infosys Springboard validating essential cloud computing principles, virtualization frameworks, multi-tenant architectures, cloud storage strategies, and enterprise cloud security fundamentals."
+    description: "Official course completion certificate awarded to Yuvraj Singh through Infosys Springboard, validating essential cloud computing principles, virtualization frameworks, multi-tenant architectures, cloud storage strategies, and enterprise cloud security fundamentals."
   },
   2: {
-    title: "Building With Artificial Intelligence",
+    title: "CS205: Building with Artificial Intelligence",
     issuer: "Saylor Academy",
-    date: "Verified",
-    id: "SAYLOR-AI-ENGINEERING",
+    date: "February 7, 2026",
+    id: "2006311129YS",
+    img: "assets/cert-saylor-ai.png",
+    downloadName: "Yuvraj_Singh_Saylor_AI_Certificate.png",
+    verifyUrl: "https://learn.saylor.org/",
     skills: ["Artificial Intelligence", "Intelligent Systems", "Machine Learning Concepts", "AI Software Design", "Practical AI Solutions"],
-    description: "Accredited specialization from Saylor Academy covering core artificial intelligence principles, intelligent agent architectures, foundational machine learning concepts, and engineering practical AI-enhanced software systems."
+    description: "Accredited certificate of achievement from Saylor Academy validating 48 hours of coursework with an 88.24% distinction grade, covering artificial intelligence principles, intelligent agent architectures, foundational machine learning concepts, and engineering practical AI software systems."
   }
 };
 
@@ -431,8 +437,13 @@ function initModals() {
         </div>
 
         <div class="space-y-4 text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed">
+          <!-- Document Preview Image -->
+          <div class="my-4 rounded-2xl overflow-hidden border border-slate-200 dark:border-white/15 bg-white p-2 shadow-2xl">
+            <img src="${cert.img}" alt="${cert.title} Certificate" class="w-full h-auto rounded-xl object-contain shadow-inner">
+          </div>
+
           <div>
-            <h4 class="font-semibold text-slate-900 dark:text-white text-base mb-1">📜 Certification Description</h4>
+            <h4 class="font-semibold text-slate-900 dark:text-white text-base mb-1">📜 Certification Overview</h4>
             <p>${cert.description}</p>
           </div>
 
@@ -448,8 +459,12 @@ function initModals() {
           <button type="button" class="close-modal-trigger px-4 py-2 text-sm font-medium rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
             Close
           </button>
-          <a href="#" onclick="showToast('Credential verification simulated ✅'); return false;" class="px-5 py-2 text-sm font-medium rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-500 hover:from-purple-500 hover:via-pink-500 hover:to-cyan-400 text-white shadow-lg shadow-purple-500/25 transition-all flex items-center gap-2">
-            <span>Verify Badge</span>
+          <a href="${cert.img}" download="${cert.downloadName}" class="px-4 py-2 text-sm font-medium rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-slate-200 transition-colors flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download</span>
+          </a>
+          <a href="${cert.verifyUrl}" target="_blank" rel="noopener noreferrer" class="px-5 py-2 text-sm font-medium rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-500 hover:from-purple-500 hover:via-pink-500 hover:to-cyan-400 text-white shadow-lg shadow-purple-500/25 transition-all flex items-center gap-2">
+            <span>Verify Online</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
           </a>
         </div>
